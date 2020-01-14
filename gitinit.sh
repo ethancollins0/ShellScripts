@@ -1,6 +1,5 @@
 #! /bin/bash
 
-
 echo "Enter remote repo ssh"
 read repo
 
