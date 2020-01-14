@@ -4,16 +4,9 @@
 echo "Enter remote repo ssh"
 read repo
 
-echo 'initializing git'
 git init $PWD
-echo "================================"
-echo 'staging files'
 git add $PWD
-echo "================================"
-echo 'committing files'
 git commit -m 'initial commit' $PWD
-echo "================================"
-echo 'adding remote repository link'
 git remote remove origin
 git remote add origin $repo
 if [ $? -eq 0 ]; then
