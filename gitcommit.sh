@@ -5,4 +5,4 @@ read message
 
 git add --all $PWD
 git commit -m "$message" $PWD
-git push $PWD
+git --work-tree=$PWD push
