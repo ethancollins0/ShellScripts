@@ -12,7 +12,7 @@ git remote add origin $repo
 
 if [ $? -eq 0 ]; then
   echo 'Successfully added origin, pushing files'
-  git push
+  git push $PWD
 else
   echo 'failed to add origin, please check input value and try again'
 fi
