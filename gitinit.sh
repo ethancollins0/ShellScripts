@@ -15,7 +15,7 @@ git commit -m 'initial commit' $PWD
 echo "================================"
 echo 'adding remote repository link'
 git remote remove origin
-git remote add origin repo
+git remote add origin $repo
 if [ $? -eq 0 ]; then
   echo 'Successfully added origin, pushing files'
   git push
