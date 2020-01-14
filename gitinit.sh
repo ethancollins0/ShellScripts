@@ -7,8 +7,10 @@ read repo
 git init $PWD
 git add $PWD
 git commit -m 'initial commit' $PWD
+
 git remote remove origin
 git remote add origin $repo
+
 if [ $? -eq 0 ]; then
   echo 'Successfully added origin, pushing files'
   git push
