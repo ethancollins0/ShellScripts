@@ -16,7 +16,7 @@ echo "================================"
 echo 'adding remote repository link'
 git remote remove origin
 git remote add origin repo
-if [$? -eq 0]; then
+if [ $? -eq 0 ]; then
   echo 'Successfully added origin, pushing files'
   git push
 else
